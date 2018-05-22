@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case "$ACTION" in
+	ifup)
+		/etc/init.d/autossh enabled && /etc/init.d/autossh/start
+		;;
+	ifdown)
+		/etc/init.d/autossh stop
+		;;
+esac
