@@ -13,6 +13,7 @@ define Package/$(PKG_NAME)
   URL:=https://github.com/Hawthorn2013/openwrt-autossh-scripts
   SUBMENU:=SSH
   DEPENDS:=autossh-bin
+  PKGARCH:=all
 endef
 
 define Package/$(PKG_NAME)/description
